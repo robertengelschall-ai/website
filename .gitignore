@@ -1,0 +1,6 @@
+# Dateien, die Git ignorieren soll (werden nicht hochgeladen)
+
+# Von Windows und macOS automatisch angelegte Dateien
+Thumbs.db
+desktop.ini
+.DS_Store

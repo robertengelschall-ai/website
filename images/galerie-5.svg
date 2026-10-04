@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#e3ead6"/>
+  <circle cx="560" cy="150" r="60" fill="#e0a458"/>
+  <path d="M0 600 V440 L210 350 L400 470 L580 320 L800 500 V600 Z" fill="#4f6b32"/>
+  <text x="400" y="555" text-anchor="middle" font-family="system-ui, 'Segoe UI', sans-serif" font-size="34" fill="#ffffff">Platzhalter – Bild 5</text>
+</svg>

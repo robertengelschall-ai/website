@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt – Mustername</title>
+  <meta name="description" content="So erreichen Sie Mustername: Adresse, Telefon, E-Mail und Öffnungszeiten.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="zum-inhalt" href="#inhalt">Zum Inhalt springen</a>
+
+  <!-- ===== Kopfbereich: auf jeder Seite gleich ===== -->
+  <header class="kopf">
+    <div class="container kopf-inhalt">
+      <a class="logo" href="index.html">Mustername</a>
+
+      <button class="menue-knopf" type="button" aria-expanded="false" aria-controls="navigation">
+        <span aria-hidden="true">☰</span> Menü
+      </button>
+
+      <nav class="navigation" id="navigation" aria-label="Hauptmenü">
+        <ul>
+          <li><a href="index.html">Start</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt">
+    <section class="abschnitt">
+      <div class="container">
+        <h1>Kontakt</h1>
+        <p class="einleitung">Sie haben eine Frage oder möchten vorbeikommen? Wir freuen uns auf Ihre Nachricht!</p>
+
+        <div class="kontakt-raster">
+
+          <!-- ÄNDERN: eigene Kontaktdaten eintragen.
+               mailto: öffnet beim Klick das E-Mail-Programm, tel: startet auf dem Handy einen Anruf.
+               Die Telefonnummer im tel:-Link ohne Leerzeichen und mit +49 statt der ersten 0 schreiben. -->
+          <div class="kachel">
+            <h2>So erreichen Sie uns</h2>
+            <dl class="kontakt-liste">
+              <dt>E-Mail</dt>
+              <dd><a href="mailto:info@example.com">info@example.com</a></dd>
+
+              <dt>Telefon</dt>
+              <dd><a href="tel:+49123456789">0123 456789</a></dd>
+
+              <dt>Adresse</dt>
+              <dd>
+                Mustername<br>
+                Musterstraße 1<br>
+                12345 Musterstadt
+              </dd>
+            </dl>
+            <!-- ÄNDERN: Adresse im Link anpassen (Leerzeichen als %20 oder +).
+                 Bewusst ein Link statt einer eingebetteten Karte: Karten von Google & Co.
+                 würden schon beim Laden der Seite Daten übertragen. -->
+            <a class="knopf" href="https://www.openstreetmap.org/search?query=Musterstra%C3%9Fe+1+12345+Musterstadt" target="_blank" rel="noopener">Route planen</a>
+          </div>
+
+          <!-- ÄNDERN: Öffnungs- oder Trainingszeiten -->
+          <div class="kachel">
+            <h2>Öffnungszeiten</h2>
+            <table class="zeiten">
+              <tr><th scope="row">Montag – Freitag</th><td>9:00 – 18:00 Uhr</td></tr>
+              <tr><th scope="row">Samstag</th><td>10:00 – 14:00 Uhr</td></tr>
+              <tr><th scope="row">Sonntag</th><td>geschlossen</td></tr>
+            </table>
+            <p class="hinweis-klein">An Feiertagen gelten abweichende Zeiten.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Fußzeile: auf jeder Seite gleich ===== -->
+  <footer class="fuss">
+    <div class="container fuss-inhalt">
+      <p>© <span class="jahr">2026</span> Mustername</p>
+      <ul>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

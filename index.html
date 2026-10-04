@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ÄNDERN: Titel (steht im Browser-Tab) und Beschreibung (erscheint bei Google) -->
+  <title>Mustername – Willkommen</title>
+  <meta name="description" content="Kurze Beschreibung von Mustername in ein bis zwei Sätzen. Dieser Text erscheint in den Google-Suchergebnissen.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="zum-inhalt" href="#inhalt">Zum Inhalt springen</a>
+
+  <!-- ===== Kopfbereich: auf jeder Seite gleich ===== -->
+  <header class="kopf">
+    <div class="container kopf-inhalt">
+      <!-- ÄNDERN: Name (oder ein Logo-Bild: <img src="images/logo.svg" alt="Mustername">) -->
+      <a class="logo" href="index.html">Mustername</a>
+
+      <button class="menue-knopf" type="button" aria-expanded="false" aria-controls="navigation">
+        <span aria-hidden="true">☰</span> Menü
+      </button>
+
+      <nav class="navigation" id="navigation" aria-label="Hauptmenü">
+        <ul>
+          <li><a href="index.html" aria-current="page">Start</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt">
+
+    <!-- ===== Begrüßung ===== -->
+    <section class="hero">
+      <div class="container hero-inhalt">
+        <div>
+          <p class="hero-oberzeile">Willkommen bei</p>
+          <!-- ÄNDERN: Name und Slogan -->
+          <h1>Mustername</h1>
+          <p class="hero-slogan">Hier steht Ihr Slogan: ein Satz, der zeigt, was Sie ausmacht.</p>
+          <div class="knopf-reihe">
+            <a class="knopf" href="kontakt.html">Kontakt aufnehmen</a>
+            <a class="knopf knopf-zweit" href="galerie.html">Galerie ansehen</a>
+          </div>
+        </div>
+        <!-- ÄNDERN: eigenes Foto in den Ordner images/ legen und den Dateinamen hier eintragen -->
+        <img class="hero-bild" src="images/hero.svg" alt="Platzhalter: Hier kommt ein Foto hin" width="1200" height="900">
+      </div>
+    </section>
+
+    <!-- ===== Über uns ===== -->
+    <section class="abschnitt abschnitt-flaeche">
+      <div class="container schmal">
+        <h2>Über uns</h2>
+        <!-- ÄNDERN: kurze Vorstellung -->
+        <p>
+          Hier stellen Sie sich vor: Wer sind Sie, seit wann gibt es Sie, und was macht Sie besonders?
+          Zwei bis vier Sätze reichen völlig, denn am Bildschirm wird lieber kurz und knapp gelesen.
+        </p>
+        <p>
+          Ein zweiter Absatz kann zum Beispiel erzählen, für wen Ihr Angebot gedacht ist oder
+          was Besucher bei Ihnen erwartet.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Angebote / Aktivitäten ===== -->
+    <section class="abschnitt">
+      <div class="container">
+        <h2>Unser Angebot</h2>
+        <!-- ÄNDERN: Kacheln anpassen. Eine weitere Kachel = einen <article>-Block kopieren. -->
+        <div class="kacheln">
+          <article class="kachel">
+            <span class="kachel-nummer">1</span>
+            <h3>Angebot eins</h3>
+            <p>Beschreiben Sie kurz, was Sie anbieten oder was bei Ihnen passiert, zum Beispiel Kurse, Training oder Beratung.</p>
+          </article>
+          <article class="kachel">
+            <span class="kachel-nummer">2</span>
+            <h3>Angebot zwei</h3>
+            <p>Ein zweiter Schwerpunkt, etwa Veranstaltungen, Produkte oder regelmäßige Treffen.</p>
+          </article>
+          <article class="kachel">
+            <span class="kachel-nummer">3</span>
+            <h3>Angebot drei</h3>
+            <p>Noch ein Punkt, der Besucher interessieren könnte, etwa Mitgliedschaft, Preise oder Termine.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Aufruf zum Kontakt ===== -->
+    <section class="abschnitt abschnitt-flaeche">
+      <div class="container">
+        <div class="aufruf">
+          <h2>Neugierig geworden?</h2>
+          <p>Wir freuen uns auf Ihre Nachricht und beantworten gern alle Fragen.</p>
+          <a class="knopf knopf-hell" href="kontakt.html">Zum Kontakt</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Fußzeile: auf jeder Seite gleich ===== -->
+  <footer class="fuss">
+    <div class="container fuss-inhalt">
+      <p>© <span class="jahr">2026</span> Mustername</p>
+      <ul>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

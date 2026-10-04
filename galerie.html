@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galerie – Mustername</title>
+  <meta name="description" content="Bilder und Einblicke von Mustername.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="zum-inhalt" href="#inhalt">Zum Inhalt springen</a>
+
+  <!-- ===== Kopfbereich: auf jeder Seite gleich ===== -->
+  <header class="kopf">
+    <div class="container kopf-inhalt">
+      <a class="logo" href="index.html">Mustername</a>
+
+      <button class="menue-knopf" type="button" aria-expanded="false" aria-controls="navigation">
+        <span aria-hidden="true">☰</span> Menü
+      </button>
+
+      <nav class="navigation" id="navigation" aria-label="Hauptmenü">
+        <ul>
+          <li><a href="index.html">Start</a></li>
+          <li><a href="galerie.html" aria-current="page">Galerie</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt">
+    <section class="abschnitt">
+      <div class="container">
+        <h1>Galerie</h1>
+        <p class="einleitung">Einblicke in unsere Arbeit und unsere Veranstaltungen. Klicken Sie auf ein Bild, um es zu vergrößern.</p>
+
+        <!-- ÄNDERN: Bilder austauschen.
+             Ein Bild besteht aus einem <figure>-Block:
+             - href im <a>  = Bild in groß (das wird beim Klicken angezeigt)
+             - src im <img> = Vorschaubild (meist dieselbe Datei)
+             - alt          = kurze Bildbeschreibung für blinde Menschen und Suchmaschinen
+             - figcaption   = sichtbare Bildunterschrift
+             Für ein weiteres Bild einfach einen <figure>-Block kopieren. -->
+        <div class="galerie">
+          <figure>
+            <a href="images/galerie-1.svg"><img src="images/galerie-1.svg" alt="Platzhalterbild 1" width="800" height="600" loading="lazy"></a>
+            <figcaption>Bildunterschrift 1, z. B. „Sommerfest 2026“</figcaption>
+          </figure>
+          <figure>
+            <a href="images/galerie-2.svg"><img src="images/galerie-2.svg" alt="Platzhalterbild 2" width="800" height="600" loading="lazy"></a>
+            <figcaption>Bildunterschrift 2</figcaption>
+          </figure>
+          <figure>
+            <a href="images/galerie-3.svg"><img src="images/galerie-3.svg" alt="Platzhalterbild 3" width="800" height="600" loading="lazy"></a>
+            <figcaption>Bildunterschrift 3</figcaption>
+          </figure>
+          <figure>
+            <a href="images/galerie-4.svg"><img src="images/galerie-4.svg" alt="Platzhalterbild 4" width="800" height="600" loading="lazy"></a>
+            <figcaption>Bildunterschrift 4</figcaption>
+          </figure>
+          <figure>
+            <a href="images/galerie-5.svg"><img src="images/galerie-5.svg" alt="Platzhalterbild 5" width="800" height="600" loading="lazy"></a>
+            <figcaption>Bildunterschrift 5</figcaption>
+          </figure>
+          <figure>
+            <a href="images/galerie-6.svg"><img src="images/galerie-6.svg" alt="Platzhalterbild 6" width="800" height="600" loading="lazy"></a>
+            <figcaption>Bildunterschrift 6</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Vergrößerte Ansicht: wird von js/main.js gefüllt und geöffnet -->
+  <dialog class="lightbox" aria-label="Vergrößertes Bild">
+    <button class="lightbox-schliessen" type="button" aria-label="Schließen">✕</button>
+    <figure>
+      <img alt="">
+      <figcaption></figcaption>
+    </figure>
+  </dialog>
+
+  <!-- ===== Fußzeile: auf jeder Seite gleich ===== -->
+  <footer class="fuss">
+    <div class="container fuss-inhalt">
+      <p>© <span class="jahr">2026</span> Mustername</p>
+      <ul>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
